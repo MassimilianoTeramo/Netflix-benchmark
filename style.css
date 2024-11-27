@@ -1,0 +1,267 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.924);
+    font-family: "Hubballi", sans-serif;
+}
+.container-fluid, .navbar, .container {
+    padding:0;
+}
+
+.navbar{
+    font-size: larger;
+    background-color: rgba(0, 0, 0, 0.074);
+    a, span{
+        color: rgba(255, 255, 255, 0.36);;
+        
+    }
+}
+
+.navbar li {
+    color: white;
+}
+
+#NavBarMax {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    button {
+        color: white;
+    }
+    li {
+        list-style: none;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    i, span {
+        color: white;
+        cursor: pointer;
+    }
+    * {
+        margin-right: 20px;
+    }
+    
+ 
+}
+
+
+.logo {
+    width: 130px;
+    padding: 10px;
+    margin-left: 2rem;
+}
+
+.userpic {
+    width: 60px;
+    margin: 0px !important;
+}
+.dropdown-menu {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    
+}
+
+.inputBtn {
+    width: 150px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.346);
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: text!important;
+    
+}
+
+.secNav {
+    margin-top:30px;
+    display: flex;
+    justify-content: space-between;
+    align-items:start;
+    h2{
+        margin-left: 3rem;
+        color: white;
+    }
+    .genres {
+        border: 1px solid white;
+        color: white;
+        width: 150px;
+        text-align: start;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 0;
+        margin-left: 40px;
+        font-size: larger;
+    }
+    a {
+        color: rgba(255, 255, 255, 0.36)!important;
+    }
+     a:hover {
+        color: white!important;
+    } 
+}
+.shows {
+    display: flex;
+    align-items: start;
+}
+
+.icons {
+    margin-right: 80px;
+    display: flex;
+    justify-content: center;
+    
+    .btn {
+        margin: 0;
+        width:60px;
+        height: 35px;
+        border: 2px solid rgba(255, 255, 255, 0.36);
+        color: rgba(255, 255, 255, 0.36);
+        border-radius: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+            font-size: 20px;
+            align-items: center;
+        }
+
+    }
+    .btn:hover {
+        border-color: white;
+        color: white;
+    }
+}
+h2, h3 {
+    font-family:"Readex Pro", sans-serif;
+    color: white;
+}
+
+.movieRow {
+    position: relative;
+    overflow-x: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-content: center;
+    
+    /* border: 1px solid white; */
+    
+}
+.movieSlider {
+    height: auto;
+    overflow: visible;
+    height: 250px;
+    display: flex;
+    justify-content: end;
+}
+
+
+.movieCards {
+    display: inline-block;
+    min-width: 300px;
+    margin-right:10px;
+    align-items: center;
+    padding-top: 50px;
+
+}
+
+.navigation-button {
+    position: absolute;
+    white-space: nowrap;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    transform: translateY(-50%);
+    background-color: black;
+  
+}
+
+.prev-button {
+    left: 0;
+}
+
+
+.next-button {
+    right: 0;
+}
+
+.movieRow:hover {
+    .navigation-button {
+        color: rgba(203, 16, 16, 0.87);
+        background-color: rgba(0, 0, 0, 0.344);
+        opacity: 1;
+        z-index: 3;
+        border: 3px solid rgba(203, 16, 16, 0.87);
+        border-radius: 50px;
+
+    }
+}
+.movieCards {
+    transition: 0.3s;
+}
+.movieCards:hover {
+    transform: scale(1.2);
+    z-index: 2;
+    margin: 0 10px;
+}
+.movieCards:first-child:hover {
+    margin-left: 30px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    button {
+        border: 2px solid rgba(255, 255, 255, 0.36);
+        color: rgba(255, 255, 255, 0.36);
+        width: 110px;
+        background-color: black;
+        padding: 2px;
+        font-size: small;
+    }
+
+    li:hover {
+        color: white;
+        cursor: pointer;
+    }
+    button:hover {
+        color: white;
+    }
+
+
+}
+.social {
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+    .bi {
+        width: 30px;
+        font-size: 30px;
+        color: rgba(255, 255, 255, 0.36);
+        margin-right: 20px;
+    }
+      i:hover {
+        color: white;
+        cursor: pointer;
+    }
+   
+} 
+.footerInfo {
+    display: flex;
+    align-content: space-between;
+    ul {
+        padding: 0;
+        margin-right: 8rem;
+        margin-top: 20px;
+        color: rgba(255, 255, 255, 0.36);
+    }
+      li{
+        list-style: none;
+        padding: 0;
+    }
+}

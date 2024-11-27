@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=DynaPuff:wght@400..700&family=Henny+Penny&family=Honk&family=Hubballi&family=Kumar+One&family=Oi&family=Readex+Pro:wght@160..700&family=Vibur&family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=DynaPuff:wght@400..700&family=Henny+Penny&family=Honk&family=Hubballi&family=Kumar+One&family=Oi&family=Vibur&family=Yellowtail&display=swap"
+        rel="stylesheet">
+    <title>Netflix</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="assets/imgs/Netflix_Logo_RGB.png" alt="logo" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TV Shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Recently Added</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My List</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="NavBarMax">
+                <div id="divBtn">
+                    
+                </div>
+                <i class="bi bi-search"></i>
+                <span>KIDS</span>
+                <i class="bi bi-bell-fill"></i>
+
+                <ul>
+                    <li class="dropdown">
+                        <div class="btn-group">
+                            <img src="assets/imgs/elastikorps-heropop-tmnt-michelangelo.jpg" alt="userpic"
+                                class="btn userpic" type="button" aria-expanded="false">
+                            <button type="button" class="btn btn-sm dropdown-toggle dropdown-toggle-split"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropdown</span>
+                            </button>
+
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-start dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Saved</a></li>
+                                <li><a class="dropdown-item" href="#">Setting</a></li>
+                                <li><a class="dropdown-item" href="#">Exit</a></li>
+                            </ul>
+                        </div>
+
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="secNav">
+        <div class="shows">
+            <h2>TV Shows</h2>
+            <div class="btn-group">
+                <button class="btn dropdown-toggle genres" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Genres
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-start dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Comedy</a></li>
+                    <li><a class="dropdown-item" href="#">Fantasy</a></li>
+                    <li><a class="dropdown-item" href="#">Thriller</a></li>
+                    <li><a class="dropdown-item" href="#">Horror</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="icons">
+            <button class="btn" type="button"><i class="bi bi-text-left"></i></button>
+            <button class="btn" type="button"><i class="bi bi-grid"></i></button>
+        </div>
+
+    </section>
+    <div class="container">
+        <h3 class="mt-5">Trending Now</h3>
+        <section class="movieRow mt-3">
+            <button class="navigation-button prev-button">&lt;</button>
+            <div class="movieSlider" id="trendingNow">
+
+            </div>
+            <button class="navigation-button next-button">&gt;</button>
+        </section>
+
+        <h3 class="mt-5">Watch It Again</h3>
+        <section class="movieRow mt-3">
+            <button class="navigation-button prev-button">&lt;</button>
+            <div class="movieSlider" id="watchAgain">
+
+            </div>
+            <button class="navigation-button next-button">&gt;</button>
+        </section>
+
+        <h3 class="mt-5">New Releases</h3>
+        <section class="movieRow mt-3">
+            <button class="navigation-button prev-button">&lt;</button>
+            <div class="movieSlider" id="newReleases">
+
+            </div>
+            <button class="navigation-button next-button">&gt;</button>
+        </section>
+    </div>
+    <footer class="container mt-5 pt-5">
+        <div class="social">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-youtube"></i>
+        </div>
+        <div class="footerInfo">
+            <div id="g1" class="pl-0">
+                <ul>
+                    <li>Audio and Subtitles</li>
+                    <li>Media Center</li>
+                    <li>Privacy</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div id="g2">
+                <ul>
+                    <li>Audio Description</li>
+                    <li>Investor Relations</li>
+                    <li>Legal Notices</li>
+                </ul>
+            </div>
+            <div id="g3">
+                <ul>
+                    <li>Help Center</li>
+                    <li>Jobs</li>
+                    <li>Cookie Preferences</li>
+                </ul>
+
+            </div>
+            <div id="g4">
+                <ul>
+                    <li>Gift Card</li>
+                    <li>Terms of Use</li>
+                    <li>Corporate Information</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <button type="button" class="mb-4">Service Code</button>
+
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
