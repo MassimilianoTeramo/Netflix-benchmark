@@ -141,7 +141,7 @@ h2, h3 {
 
 .movieRow {
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
     white-space: nowrap;
     display: flex;
     align-content: center;
